@@ -69,7 +69,7 @@ export const SpriteSVG = ({
             id="Vector 5 (Stroke)"
             d="M8.74 8.74C9.1 8.37 9.69 8.37 10.06 8.74L23.25 21.93C23.62 22.3 23.62 22.89 23.25 23.25C22.89 23.62 22.3 23.62 21.93 23.25L8.74 10.06C8.37 9.69 8.37 9.1 8.74 8.74Z"
             fill="#FFFFFF"
-            fill-opacity="1.000000"
+            fillOpacity="1.000000"
             fillRule="evenodd"
           />
           <path

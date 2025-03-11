@@ -18,7 +18,7 @@ export default function Button({
     <button
       type={type}
       className={twMerge(
-        `w-fit px-6 py-4 font-medium text-black-100 bg-cyan rounded-sm shadow-cyan transition-all`,
+        `w-fit px-6 py-4 font-medium text-black-100 uppercase bg-cyan rounded-sm shadow-cyan transition-all`,
         styles
       )}
       onClick={onClick}

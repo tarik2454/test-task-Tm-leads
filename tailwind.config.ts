@@ -9,7 +9,10 @@ const config: Config = {
           100: '#030718',
           200: '#000000',
         },
-        blue: '#E7F7F8',
+        blue: {
+          100: '#E7F7F8',
+          200: '#201A4F',
+        },
         purple: '#6A54FF',
         cyan: '#57E1FF',
         green: '#35FF9E',
@@ -26,6 +29,8 @@ const config: Config = {
       },
       opacity: {
         30: '0.3',
+        34: '0.34',
+        70: '0.7',
         80: '0.80',
       },
       fontFamily: {
@@ -40,7 +45,7 @@ const config: Config = {
         sm: ['14px', '1.43'], // done
         base: ['16px', '1.25'], // done
         lg: ['18px', '1.5'],
-        xl: ['20px', '1.2'],
+        xl: ['20px', '1.4'], // done
         '2xl': ['24px', '1.25'], // done
         '4xl': ['35px', '1.26'], // done
       },
@@ -54,8 +59,13 @@ const config: Config = {
       boxShadow: {
         cyan: '0px 0px 4px #57E1FF',
       },
+      letterSpacing: {
+        minus1: '-0.01em',
+        minus4: '-0.04em',
+      },
       borderRadius: {
         sm: '3px',
+        md: '4px',
       },
     },
   },
