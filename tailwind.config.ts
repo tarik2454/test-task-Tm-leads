@@ -9,6 +9,7 @@ const config: Config = {
           100: '#030718',
           200: '#000000',
         },
+        blue: '#E7F7F8',
         purple: '#6A54FF',
         cyan: '#57E1FF',
         green: '#35FF9E',
@@ -24,7 +25,8 @@ const config: Config = {
         transparent: 'transparent',
       },
       opacity: {
-        34: '0.34',
+        30: '0.3',
+        80: '0.80',
       },
       fontFamily: {
         sans: ['IBM Plex Sans', 'sans-serif'],
@@ -35,12 +37,12 @@ const config: Config = {
         bold: '700',
       },
       fontSize: {
-        sm: ['14px', '1.4'],
+        sm: ['14px', '1.43'], // done
         base: ['16px', '1.25'], // done
         lg: ['18px', '1.5'],
         xl: ['20px', '1.2'],
-        '2xl': ['24px', '1.3'],
-        '4xl': ['36px', '0.9'],
+        '2xl': ['24px', '1.25'], // done
+        '4xl': ['35px', '1.26'], // done
       },
       screens: {
         sm: '375px',
@@ -49,10 +51,11 @@ const config: Config = {
         xl: '1440px',
         '2xl': '-1px',
       },
+      boxShadow: {
+        cyan: '0px 0px 4px #57E1FF',
+      },
       borderRadius: {
-        sm: '8px',
-        md: '16px',
-        lg: '29px',
+        sm: '3px',
       },
     },
   },

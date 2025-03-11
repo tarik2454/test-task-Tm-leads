@@ -44,6 +44,44 @@ export const SpriteSVG = ({
         </svg>
       );
 
+    case 'closeButton':
+      return (
+        <svg
+          width="32.000000"
+          height="32.000000"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        >
+          <desc>Created with Pixso.</desc>
+          <defs />
+          <rect
+            id="Frame 18"
+            rx="0.000000"
+            width="31.000000"
+            height="31.000000"
+            transform="translate(0.500000 0.500000)"
+            fill="#FFFFFF"
+            fillOpacity="0"
+          />
+          <path
+            id="Vector 5 (Stroke)"
+            d="M8.74 8.74C9.1 8.37 9.69 8.37 10.06 8.74L23.25 21.93C23.62 22.3 23.62 22.89 23.25 23.25C22.89 23.62 22.3 23.62 21.93 23.25L8.74 10.06C8.37 9.69 8.37 9.1 8.74 8.74Z"
+            fill="#FFFFFF"
+            fill-opacity="1.000000"
+            fillRule="evenodd"
+          />
+          <path
+            id="Vector 6 (Stroke)"
+            d="M8.74 23.25C8.37 22.89 8.37 22.3 8.74 21.93L21.93 8.74C22.3 8.37 22.89 8.37 23.25 8.74C23.62 9.1 23.62 9.69 23.25 10.06L10.06 23.25C9.69 23.62 9.1 23.62 8.74 23.25Z"
+            fill="#FFFFFF"
+            fillOpacity="1.000000"
+            fillRule="evenodd"
+          />
+        </svg>
+      );
+
     default:
       return 'SVG not found';
   }

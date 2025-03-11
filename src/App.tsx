@@ -1,5 +1,6 @@
 import Footer from './modules/footer/Footer';
 import Header from './modules/header/Header';
+import Hero from './modules/hero/Hero';
 
 export default function App() {
   return (
@@ -7,7 +8,7 @@ export default function App() {
       <Header />
 
       <main className="h-screen">
-        <h2>Добро пожаловать!</h2>
+        <Hero />
       </main>
 
       <Footer />

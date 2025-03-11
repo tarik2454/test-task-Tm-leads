@@ -13,18 +13,15 @@ export default function Button({
   type = 'button',
   children,
   onClick,
-  disabled = false,
 }: PropsButton) {
   return (
     <button
       type={type}
       className={twMerge(
-        `w-fit px-4 py-2 text-white rounded-lg transition-all duration-250`,
-        disabled ? 'bg-gray-400' : ' bg-ukraniane-via hover:bg-ukraniane-end',
+        `w-fit px-6 py-4 font-medium text-black-100 bg-cyan rounded-sm shadow-cyan transition-all`,
         styles
       )}
       onClick={onClick}
-      disabled={disabled}
     >
       {children}
     </button>

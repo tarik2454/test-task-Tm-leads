@@ -9,7 +9,7 @@ export default function Section({
   styles?: string;
 }) {
   return (
-    <section className={twMerge(`pt-[30px] pb-[30px]`, styles)}>
+    <section className={twMerge(`pt-[40px] pb-[37px]`, styles)}>
       {children}
     </section>
   );
