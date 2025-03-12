@@ -8,16 +8,15 @@ import Card from './Card';
 export default function Slider() {
   return (
     <div className="relative">
-      {/* Нужно для позиционирования скроллбара */}
       <Swiper
         slidesPerView={'auto'}
-        spaceBetween={-34}
+        spaceBetween={-51}
         scrollbar={{
-          hide: false, // Скроллбар должен быть видимым
-          draggable: true, // Чтобы можно было двигать
+          hide: false,
+          draggable: true,
         }}
         modules={[Scrollbar]}
-        className="pb-[24px]" // Добавляем отступ вниз для скроллбара
+        className="pb-[24px]"
       >
         <SwiperSlide>
           <Card />
@@ -35,8 +34,6 @@ export default function Slider() {
           <Card />
         </SwiperSlide>
       </Swiper>
-      {/* Стили для скроллбара */}
-      {/* <div className="swiper-scrollbar !bottom-0 absolute left-0 w-full"></div> */}
     </div>
   );
 }

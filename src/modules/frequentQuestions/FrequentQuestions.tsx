@@ -1,0 +1,53 @@
+import Container from '@/shared/components/Container';
+import Section from '@/shared/components/Section';
+import SectionTitle from '@/shared/components/SectionTitle';
+
+import { useState } from 'react';
+
+import faqData from './data/faqData';
+import { SpriteSVG } from '@/assets/img/SpriteSVG';
+
+export default function FrequentQuestions() {
+  const [activeIndex, setActiveIndex] = useState<number | null>(0);
+
+  const toggleAccordion = (index: number) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+  return (
+    <Section styles="pt-[56px] mb-[54px]">
+      <Container>
+        <SectionTitle styles={'mb-10 text-title !text-secondaryText'}>
+          Часто задаваемые вопросы
+        </SectionTitle>
+
+        <div className="w-full max-w-lg mx-auto space-y-2">
+          {faqData.map((item, index) => (
+            <div key={index} className="border rounded-md overflow-hidden">
+              <button
+                onClick={() => toggleAccordion(index)}
+                className={`w-full flex justify-between items-center p-4 pb-3 text-xl font-medium text-left tracking-minus4 ${
+                  activeIndex === index
+                    ? ' bg-purpleBackground'
+                    : 'text-black-100 bg-gray'
+                }`}
+              >
+                {item.title}
+                {activeIndex === index ? (
+                  <SpriteSVG name={'chevronUp'} />
+                ) : (
+                  <SpriteSVG name={'chevronDown'} />
+                )}
+              </button>
+              {activeIndex === index && (
+                <div className="p-4 pt-0 bg-purpleBackground">
+                  {item.content}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </Container>
+    </Section>
+  );
+}

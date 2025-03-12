@@ -95,6 +95,33 @@ export const SpriteSVG = ({
         </svg>
       );
 
+    case 'chevronUp':
+      return (
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path
+            stroke="#fff"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.4"
+            d="m6 14.5 6-6 6 6"
+          />
+        </svg>
+      );
+
+    case 'chevronDown':
+      return (
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path
+            stroke="#030718"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.4"
+            d="m6 9.5 6 6 6-6"
+            opacity=".5"
+          />
+        </svg>
+      );
+
     default:
       return 'SVG not found';
   }

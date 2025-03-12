@@ -1,7 +1,9 @@
+import Figures from './modules/figures/Figures';
 import Footer from './modules/footer/Footer';
+import FrequentQuestions from './modules/frequentQuestions/FrequentQuestions';
 import Header from './modules/header/Header';
 import Hero from './modules/hero/Hero';
-import PastDeals from './modules/pastDeals/pastDeals';
+import PastDeals from './modules/pastDeals/PastDeals';
 
 export default function App() {
   return (
@@ -10,7 +12,9 @@ export default function App() {
 
       <main className="">
         <Hero />
+        <Figures />
         <PastDeals />
+        <FrequentQuestions />
       </main>
 
       <Footer />

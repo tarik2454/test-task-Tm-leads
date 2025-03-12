@@ -16,6 +16,7 @@ const config: Config = {
         purple: '#6A54FF',
         cyan: '#57E1FF',
         green: '#35FF9E',
+        gray: '#EAEFF0',
 
         primaryBackground: '#FFFFFF ',
         secondaryBackground: '#030718',
@@ -31,6 +32,7 @@ const config: Config = {
         30: '0.3',
         34: '0.34',
         40: '0.4',
+        50: '0.5',
         70: '0.7',
         80: '0.80',
       },
