@@ -29,6 +29,7 @@ const config: Config = {
         transparent: 'transparent',
       },
       opacity: {
+        20: '0.2',
         30: '0.3',
         34: '0.34',
         40: '0.4',
@@ -72,6 +73,7 @@ const config: Config = {
       borderRadius: {
         sm: '3px',
         md: '4px',
+        lg: '8px',
       },
     },
   },

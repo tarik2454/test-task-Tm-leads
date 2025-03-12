@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-col justify-between">
           <div className="grid grid-cols-[30%_70%] gap-[74px] mb-[57px]">
             <h4 className="text-sm opacity-40">Быстрая навигация</h4>
-            <nav>
+            <nav className="max-w-[70%]">
               <ul className="flex flex-col gap-4">
                 {menuItems.map(item => (
                   <li key={item.id}>

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { SpriteSVG } from '@/assets/img/SpriteSVG';
 import Container from '@/shared/components/Container';
-import logo from '@/assets/img/logo.png';
+import logo from '@/assets/img/logoHeader.png';
 import MobileMenu from './components/MobileMenu';
 
 export default function Header() {

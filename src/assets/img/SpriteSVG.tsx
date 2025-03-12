@@ -122,6 +122,26 @@ export const SpriteSVG = ({
         </svg>
       );
 
+    case 'yes':
+      return (
+        <svg width="12" height="12" fill="none" viewBox="0 0 12 12">
+          <g clip-path="url(#a)">
+            <path
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.4"
+              d="m2 6.563 3.712 3.712 5.25-7.875"
+            />
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff" d="M0 0h12v12H0z" />
+            </clipPath>
+          </defs>
+        </svg>
+      );
+
     default:
       return 'SVG not found';
   }
