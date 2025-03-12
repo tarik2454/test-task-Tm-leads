@@ -1,7 +1,9 @@
+import Container from '@/shared/components/Container';
+
 export default function Footer() {
   return (
-    <div>
+    <Container>
       <p>© 2025 Все права защищены</p>
-    </div>
+    </Container>
   );
 }

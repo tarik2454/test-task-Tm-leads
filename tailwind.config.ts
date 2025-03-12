@@ -30,6 +30,7 @@ const config: Config = {
       opacity: {
         30: '0.3',
         34: '0.34',
+        40: '0.4',
         70: '0.7',
         80: '0.80',
       },
@@ -47,6 +48,7 @@ const config: Config = {
         lg: ['18px', '1.5'],
         xl: ['20px', '1.4'], // done
         '2xl': ['24px', '1.25'], // done
+        title: ['28px', '1.29'], // done
         '4xl': ['35px', '1.26'], // done
       },
       screens: {
@@ -61,6 +63,7 @@ const config: Config = {
       },
       letterSpacing: {
         minus1: '-0.01em',
+        minus2: '-0.02em',
         minus4: '-0.04em',
       },
       borderRadius: {

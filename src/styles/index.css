@@ -35,3 +35,33 @@
   border-radius: 4px;
   background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: rgb(106, 84, 255); stroke-width: 2; stroke-dasharray: 8 8'/></svg>");
 }
+
+.swiper-scrollbar {
+  background-color: rgba(67, 79, 112, 0.6) !important;
+  opacity: 0.4 !important;
+  width: 91% !important;
+  height: 6px !important;
+
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+.swiper-scrollbar-drag {
+  width: 62px !important;
+  background-color: #6073a2 !important;
+}
+
+.skewed {
+  position: absolute;
+  top: -165px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #030718;
+  z-index: 100;
+  transform: skewY(40deg);
+  transform-origin: top right;
+}

@@ -81,6 +81,19 @@ export const SpriteSVG = ({
           />
         </svg>
       );
+    case 'triangle':
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="111"
+          height="161"
+          fill="none"
+        >
+          <g fill="#000001" opacity=".15">
+            <path d="M63.433 116.829 0 7.322l31.508 25.285 40.275 69.758-8.35 14.464ZM122.979 50.53l-63.12 109.688 6.144-39.929 40.275-69.759h16.701ZM74.058 94.1l23.858-41.322H50.2L74.058 94.1ZM36.158 32.805l126.552-.181-37.652 14.644h-80.55l-8.35-14.463Z" />
+          </g>
+        </svg>
+      );
 
     default:
       return 'SVG not found';
