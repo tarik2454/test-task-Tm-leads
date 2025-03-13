@@ -74,7 +74,7 @@ export default function TariffsCard({
               </button>
 
               {isOpen && (
-                <ul className="absolute right-0 bottom-full mb-1 w-40 bg-primaryBackground bg-opacity-20 rounded-md z-10">
+                <ul className="absolute right-0 bottom-full mb-1 w-40 bg-primaryBackground bg-opacity-40 rounded-md z-10">
                   {durationOptions.map(option => (
                     <li
                       key={option.months}
