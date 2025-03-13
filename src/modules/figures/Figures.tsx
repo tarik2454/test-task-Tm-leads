@@ -10,9 +10,7 @@ export default function Figures() {
 
   return (
     <Section
-      styles={
-        'py-0 pt-[24px] pb-[48px] xl:pt-[56px] !xl:pb-[61px] relative z-0'
-      }
+      styles={'py-0 pt-[24px] pb-[48px] xl:pt-[56px] xl:pb-[61px] relative z-0'}
       id="numbers"
     >
       <Container>
@@ -26,12 +24,12 @@ export default function Figures() {
           </div>
         )}
 
-        <div className="xl:flex">
+        <div className="xl:flex xl:items-center">
           <div className="mr-[156px]">
-            <SectionTitle styles={'-mt-4 !text-secondaryText'}>
+            <SectionTitle styles={'-mt-4 !text-secondaryText xl:mb-0 '}>
               Цифры
             </SectionTitle>
-            <p className="mb-10 text-sm text-secondaryText tracking-minus4 opacity-50">
+            <p className="mb-10 text-sm text-secondaryText tracking-minus4 opacity-50 xl:mb-0">
               Сентябрь 2022
             </p>
           </div>
