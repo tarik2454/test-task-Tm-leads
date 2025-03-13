@@ -4,8 +4,7 @@ import Footer from './modules/footer/Footer';
 import FrequentQuestions from './modules/frequentQuestions/FrequentQuestions';
 import Header from './modules/header/Header';
 import Hero from './modules/hero/Hero';
-import PastDeals from './modules/pastDeals/PastDeals';
-
+import { PastDeals } from './modules/pastDeals/PastDeals';
 import Tariffs from './modules/tariffs/Tariffs';
 
 export default function App() {
