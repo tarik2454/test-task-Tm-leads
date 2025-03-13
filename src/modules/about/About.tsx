@@ -5,7 +5,7 @@ import SendEmail from './components/SendEmail';
 
 export default function About() {
   return (
-    <Section styles={'pt-[48px] !pb-[132px] relative'}>
+    <Section styles={'pt-[48px] !pb-[132px] relative'} id="about">
       <Container>
         <SectionTitle styles={'mb-5 !text-secondaryText'}>
           Прошедшие сделки

@@ -100,9 +100,9 @@ export const SpriteSVG = ({
         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
           <path
             stroke="#fff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.4"
             d="m6 14.5 6-6 6 6"
           />
         </svg>
@@ -113,9 +113,9 @@ export const SpriteSVG = ({
         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
           <path
             stroke="#030718"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.4"
             d="m6 9.5 6 6 6-6"
             opacity=".5"
           />
@@ -125,12 +125,12 @@ export const SpriteSVG = ({
     case 'yes':
       return (
         <svg width="12" height="12" fill="none" viewBox="0 0 12 12">
-          <g clip-path="url(#a)">
+          <g clipPath="url(#a)">
             <path
               stroke="#fff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1.4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.4"
               d="m2 6.563 3.712 3.712 5.25-7.875"
             />
           </g>

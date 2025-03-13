@@ -1,6 +1,9 @@
+import scrollToSection from '@/shared/utilitis/scrollToSection';
+
+import { menuItems } from '@/const/menuItems';
+
 import Container from '@/shared/components/Container';
 import Logo from '../../assets/img/logo.png';
-import { menuItems } from '@/const/menuItems';
 
 export default function Footer() {
   return (
@@ -13,7 +16,14 @@ export default function Footer() {
               <ul className="flex flex-col gap-4">
                 {menuItems.map(item => (
                   <li key={item.id}>
-                    <a href={item.link} className="font-medium opacity-67">
+                    <a
+                      href={`#${item.link}`}
+                      className="font-medium opacity-67"
+                      onClick={e => {
+                        e.preventDefault();
+                        scrollToSection(item.link);
+                      }}
+                    >
                       {item.label}
                     </a>
                   </li>

@@ -47,13 +47,13 @@ const config: Config = {
         bold: '700',
       },
       fontSize: {
-        sm: ['14px', '1.43'], // done
-        base: ['16px', '1.25'], // done
+        sm: ['14px', '1.43'],
+        base: ['16px', '1.25'],
         lg: ['18px', '1.5'],
-        xl: ['20px', '1.4'], // done
-        '2xl': ['24px', '1.25'], // done
-        title: ['28px', '1.29'], // done
-        '4xl': ['35px', '1.26'], // done
+        xl: ['20px', '1.4'],
+        '2xl': ['24px', '1.25'],
+        title: ['28px', '1.29'],
+        '4xl': ['35px', '1.26'],
       },
       screens: {
         sm: '375px',
