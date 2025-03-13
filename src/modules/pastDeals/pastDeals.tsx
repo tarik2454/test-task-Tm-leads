@@ -2,7 +2,7 @@ import Section from '@/shared/components/Section';
 import Slider from './components/Slider';
 import SectionTitle from '@/shared/components/SectionTitle';
 
-export const PastDeals = () => {
+export default function PastDeals() {
   return (
     <Section styles="pt-[48px] pb-[75px] bg-secondaryBackground xl:pt-[96px] xl:pb-[148px]">
       <div className="container mx-auto h-full pl-4 xl:pl-20">
@@ -16,4 +16,4 @@ export const PastDeals = () => {
       </div>
     </Section>
   );
-};
+}
