@@ -33,7 +33,7 @@ export default function Header() {
   }, [isOpen]);
 
   return (
-    <header className="py-[2px] bg-secondaryBackground">
+    <header className="bg-secondaryBackground xl:py-[2px]">
       <Container>
         <div className="flex items-center justify-between">
           <img

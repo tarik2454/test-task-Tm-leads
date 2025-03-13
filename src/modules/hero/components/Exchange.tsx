@@ -1,6 +1,9 @@
 export default function Exchange() {
   return (
-    <div className="flex justify-between mb-[63px] relative">
+    <div
+      className="flex justify-between mb-[63px] relative
+    xl:w-[469px] xl:h-[209px]"
+    >
       <div className="custom-dashed-border w-[176px] px-[10px] py-[6px] text-purple">
         <div className="mb-5">
           <p className="text-xl font-medium tracking-minus4">ETH/USDT</p>

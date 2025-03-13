@@ -29,6 +29,12 @@
     @apply placeholder:text-sm placeholder:font-medium placeholder:text-primaryText placeholder:tracking-minus1 placeholder:opacity-34 placeholder:uppercase;
     @apply focus:border-opacity-40;
   }
+
+  @screen xl {
+    .input {
+      @apply py-[20px] px-4;
+    }
+  }
 }
 
 .custom-dashed-border {

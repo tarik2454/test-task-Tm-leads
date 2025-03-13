@@ -11,7 +11,8 @@ export default function SectionTitle({
   return (
     <h2
       className={twMerge(
-        `mb-[2px] text-title font-bold tracking-minus4 uppercase`,
+        `mb-[2px] text-title font-bold tracking-minus4 uppercase
+        xl:text-[44px]`,
         styles
       )}
     >

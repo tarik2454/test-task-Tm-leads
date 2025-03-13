@@ -17,6 +17,14 @@ export default function Slider() {
         }}
         modules={[Scrollbar]}
         className="pb-[24px]"
+        breakpoints={{
+          375: {
+            spaceBetween: -51,
+          },
+          1440: {
+            spaceBetween: -51,
+          },
+        }}
       >
         <SwiperSlide>
           <Card />
