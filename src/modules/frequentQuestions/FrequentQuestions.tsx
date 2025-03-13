@@ -17,35 +17,37 @@ export default function FrequentQuestions() {
   return (
     <Section styles="pt-[56px] mb-[54px]">
       <Container>
-        <SectionTitle styles={'mb-10 text-title !text-secondaryText'}>
-          Часто задаваемые вопросы
-        </SectionTitle>
+        <div className="xl:max-w-[846px] xl:mx-auto">
+          <SectionTitle styles={'mb-10 text-title !text-secondaryText'}>
+            Часто задаваемые вопросы
+          </SectionTitle>
 
-        <div className="w-full max-w-lg mx-auto space-y-2">
-          {faqData.map((item, index) => (
-            <div key={index} className="border rounded-md overflow-hidden">
-              <button
-                onClick={() => toggleAccordion(index)}
-                className={`w-full flex justify-between items-center p-4 pb-3 text-xl font-medium text-left tracking-minus4 ${
-                  activeIndex === index
-                    ? ' bg-purpleBackground'
-                    : 'text-black-100 bg-gray'
-                }`}
-              >
-                {item.title}
-                {activeIndex === index ? (
-                  <SpriteSVG name={'chevronUp'} />
-                ) : (
-                  <SpriteSVG name={'chevronDown'} />
+          <div className="w-full max-w-lg mx-auto space-y-2 xl:max-w-[846px]">
+            {faqData.map((item, index) => (
+              <div key={index} className="border rounded-md overflow-hidden">
+                <button
+                  onClick={() => toggleAccordion(index)}
+                  className={`w-full flex justify-between items-center -mb-[1px] p-4 pb-3 text-xl font-medium text-left tracking-minus4 xl:text-2xl ${
+                    activeIndex === index
+                      ? ' bg-purpleBackground'
+                      : 'text-black-100 bg-gray'
+                  }`}
+                >
+                  {item.title}
+                  {activeIndex === index ? (
+                    <SpriteSVG name={'chevronUp'} />
+                  ) : (
+                    <SpriteSVG name={'chevronDown'} />
+                  )}
+                </button>
+                {activeIndex === index && (
+                  <div className="p-4 pt-0 bg-purpleBackground text-white text-opacity-80">
+                    {item.content}
+                  </div>
                 )}
-              </button>
-              {activeIndex === index && (
-                <div className="p-4 pt-0 bg-purpleBackground">
-                  {item.content}
-                </div>
-              )}
-            </div>
-          ))}
+              </div>
+            ))}
+          </div>
         </div>
       </Container>
     </Section>

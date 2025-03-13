@@ -10,37 +10,27 @@ export default function Slider() {
     <div className="relative">
       <Swiper
         slidesPerView={'auto'}
-        spaceBetween={-51}
+        spaceBetween={9}
         scrollbar={{
           hide: false,
           draggable: true,
         }}
         modules={[Scrollbar]}
-        className="pb-[24px]"
         breakpoints={{
           375: {
-            spaceBetween: -51,
+            spaceBetween: 9,
           },
           1440: {
-            spaceBetween: -51,
+            spaceBetween: 20,
           },
         }}
+        className="pb-[24px]"
       >
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
+        {[...Array(10)].map((_, index) => (
+          <SwiperSlide key={index}>
+            <Card />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

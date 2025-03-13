@@ -37,23 +37,27 @@ export default function Tariffs() {
   ];
 
   return (
-    <Section styles={'pt-[181px] pb-[44px] bg-secondaryBackground'}>
+    <Section
+      styles={'pt-[181px] pb-[44px] bg-secondaryBackground xl:py-[96px]'}
+    >
       <Container>
-        <SectionTitle styles={'mb-6'}>Тарифы</SectionTitle>
+        <div className="xl:max-w-[846px] mx-auto">
+          <SectionTitle styles={'mb-6'}>Тарифы</SectionTitle>
 
-        <div className="flex justify-end w-full mb-6 py-[14px] pr-[47px] bg-purpleBackground rounded-md relative">
-          <Button styles="py-[10px] px-[61px] absolute top-1 left-1 tracking-minus4">
-            СПОТ
-          </Button>
-          <div className="text-lg font-medium leading-[1.1] tracking-minus4 uppercase text-cyan">
-            фьючерс
+          <div className="flex justify-end w-full mb-6 py-[14px] pr-[47px] bg-purpleBackground rounded-md relative xl:max-w-[413px] xl:mb-[44px]">
+            <Button styles="py-[10px] px-[61px] absolute top-1 left-1 tracking-minus4 xl:px-[80px]">
+              СПОТ
+            </Button>
+            <div className="text-lg font-medium leading-[1.1] tracking-minus4 uppercase text-cyan">
+              фьючерс
+            </div>
           </div>
-        </div>
 
-        <div className="space-y-5">
-          {plans.map((plan, index) => (
-            <TariffsCard key={index} {...plan} />
-          ))}
+          <ul className="flex gap-5 flex-col xl:flex xl:flex-row xl:gap-5 xl:items-end">
+            {plans.map((plan, index) => (
+              <TariffsCard key={index} {...plan} />
+            ))}
+          </ul>
         </div>
       </Container>
     </Section>
