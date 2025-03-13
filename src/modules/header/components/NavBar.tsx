@@ -1,6 +1,6 @@
 import scrollToSection from '@/shared/utilitis/scrollToSection';
 
-import { menuItems } from '@/const/menuItems';
+import { menuItems } from '@/shared/data/menuItems';
 
 export default function NavBar({ closeMenu }: { closeMenu: () => void }) {
   return (

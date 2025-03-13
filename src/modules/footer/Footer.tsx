@@ -1,6 +1,6 @@
 import scrollToSection from '@/shared/utilitis/scrollToSection';
 
-import { menuItems } from '@/const/menuItems';
+import { menuItems } from '@/shared/data/menuItems';
 
 import Container from '@/shared/components/Container';
 import Logo from '../../assets/img/logo.png';

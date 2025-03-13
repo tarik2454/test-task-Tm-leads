@@ -4,38 +4,9 @@ import Container from '@/shared/components/Container';
 import SectionTitle from '@/shared/components/SectionTitle';
 import Button from '@/shared/components/Button';
 
-export default function Tariffs() {
-  const plans = [
-    {
-      title: 'STANDART',
-      price: 234,
-      discount: 35,
-      duration: '12 месяцев',
-      features: [
-        'Ручной трейдинг',
-        'Автоматическое или полуавтоматическое копирование сделок',
-        'Личный кабинет со статистикой',
-        'Среднесрочные сделки с уровнями набора портфеля',
-      ],
-      isHighlighted: false,
-    },
-    {
-      title: 'VIP',
-      price: 585,
-      discount: 35,
-      duration: '12 месяцев',
-      features: [
-        'Ручной трейдинг',
-        'Автоматическое или полуавтоматическое копирование сделок',
-        'Личный кабинет со статистикой',
-        'Краткосрочные, среднесрочные и инвест сделки',
-        'Доступ в VIP-чат с командой',
-        'Наш авторский курс по трейдингу',
-      ],
-      isHighlighted: true,
-    },
-  ];
+import plans from './data/plans';
 
+export default function Tariffs() {
   return (
     <Section
       styles={'pt-[181px] pb-[44px] bg-secondaryBackground xl:py-[96px]'}
@@ -54,7 +25,7 @@ export default function Tariffs() {
             </div>
           </div>
 
-          <ul className="flex gap-5 flex-col xl:flex xl:flex-row xl:gap-5 xl:items-end">
+          <ul className="flex gap-5 flex-col xl:flex-row ">
             {plans.map((plan, index) => (
               <TariffsCard key={index} {...plan} />
             ))}

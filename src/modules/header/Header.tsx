@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import useScreenSize from '@/shared/hooks/useMediaQuery';
 import scrollToSection from '@/shared/utilitis/scrollToSection';
 
-import { menuItems } from '@/const/menuItems';
+import { menuItems } from '@/shared/data/menuItems';
 
 import { SpriteSVG } from '@/assets/img/SpriteSVG';
 import Container from '@/shared/components/Container';
