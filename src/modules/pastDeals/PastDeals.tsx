@@ -1,5 +1,5 @@
 import Section from '@/shared/components/Section';
-import Slider from '../pastDeals/components/Slider';
+import Slider from './components/Slider';
 import SectionTitle from '@/shared/components/SectionTitle';
 
 export default function PastDeals() {
