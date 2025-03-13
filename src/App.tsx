@@ -18,6 +18,7 @@ export default function App() {
         <PastDeals />
         <About />
         <Tariffs />
+
         <FrequentQuestions />
       </main>
 
