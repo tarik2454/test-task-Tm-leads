@@ -7,7 +7,7 @@ import Logo from '../../assets/img/logo.png';
 
 export default function Footer() {
   return (
-    <footer className="pt-10 bg-secondaryBackground relative xl:min-h-[348px] xl:pt-[44px] xl:pb-[45px] ">
+    <footer className="pt-10 pb-[25px] bg-secondaryBackground relative xl:pt-[28px] xl:pb-[45px] ">
       <Container>
         <div className="flex flex-col justify-between xl:flex-row ">
           <div
@@ -43,7 +43,7 @@ export default function Footer() {
               alt="Логотип"
               className="w-[165px] h-auto mb-[81px]"
             />
-            <p className="mb-[25px] text-sm text-gray-400 flex">
+            <p className="text-sm text-gray-400 flex xl:mb-0">
               © 2025 Все права защищены
             </p>
 
