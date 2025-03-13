@@ -8,7 +8,7 @@ export default function Figures() {
   const { isOnDesktop } = useScreenSize();
 
   return (
-    <Section styles={'py-[48px] xl:pt-[116px] xl:pb-[61px]'}>
+    <Section styles={'py-[48px] xl:pt-[116px] xl:pb-[61px]'} id="numbers">
       <Container>
         <div className="xl:flex">
           <div className="mr-[156px]">

@@ -39,6 +39,7 @@ export default function Tariffs() {
   return (
     <Section
       styles={'pt-[181px] pb-[44px] bg-secondaryBackground xl:py-[96px]'}
+      id="tariffs"
     >
       <Container>
         <div className="xl:max-w-[846px] mx-auto">
