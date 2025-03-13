@@ -35,7 +35,7 @@ export default function Footer() {
             </nav>
           </div>
 
-          <div className="w-full h-[1px] mb-[5] bg-primaryBackground opacity-30 xl:rotate-90 xl:min-w-[348px] xl:w-1 xl:mt-[126px]"></div>
+          <div className="w-full h-[1px] mb-[5] bg-primaryBackground opacity-30 xl:rotate-90 xl:min-w-[274px] xl:w-1 xl:mt-[108px]"></div>
 
           <div className="flex flex-col xl:justify-between xl:h-full">
             <img
