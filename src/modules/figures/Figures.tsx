@@ -3,16 +3,34 @@ import useScreenSize from '@/shared/hooks/useMediaQuery';
 import Container from '@/shared/components/Container';
 import Section from '@/shared/components/Section';
 import SectionTitle from '@/shared/components/SectionTitle';
+import { SpriteSVG } from '@/assets/img/SpriteSVG';
 
 export default function Figures() {
   const { isOnDesktop } = useScreenSize();
 
   return (
-    <Section styles={'py-[48px] xl:pt-[116px] xl:pb-[61px]'} id="numbers">
+    <Section
+      styles={
+        'py-0 pt-[24px] pb-[48px] xl:pt-[56px] !xl:pb-[61px] relative z-0'
+      }
+      id="numbers"
+    >
       <Container>
+        {(isOnDesktop && (
+          <div className="absolute left-0 -top-[59px]">
+            <SpriteSVG name="whiteLine" />
+          </div>
+        )) || (
+          <div className="absolute left-0 -top-[24px] -z-10">
+            <SpriteSVG name="witeLineMobile" />
+          </div>
+        )}
+
         <div className="xl:flex">
           <div className="mr-[156px]">
-            <SectionTitle styles={'!text-secondaryText'}>Цифры</SectionTitle>
+            <SectionTitle styles={'-mt-4 !text-secondaryText'}>
+              Цифры
+            </SectionTitle>
             <p className="mb-10 text-sm text-secondaryText tracking-minus4 opacity-50">
               Сентябрь 2022
             </p>

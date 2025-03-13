@@ -12,8 +12,8 @@ export default function Hero() {
 
   return (
     <Section
-      styles="pt-10 pb-[37px] bg-secondaryBackground
-    xl:pt-[160px] xl:pb-[134px]"
+      styles="pt-10 pb-[61px] bg-secondaryBackground
+    xl:pt-[160px] xl:pb-[194px]"
     >
       <Container>
         <div className="xl:flex xl:flex-row-reverse xl:justify-end xl:items-start xl:gap-[104px]">

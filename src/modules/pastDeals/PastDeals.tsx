@@ -5,7 +5,7 @@ import SectionTitle from '@/shared/components/SectionTitle';
 export default function PastDeals() {
   return (
     <Section
-      styles="pt-[48px] pb-[75px] bg-secondaryBackground xl:pt-[96px] xl:pb-[148px]"
+      styles="pt-[48px] pb-[99px] bg-secondaryBackground xl:pt-[96px] xl:pb-[208px]"
       id="deals"
     >
       <div className="container mx-auto h-full pl-4 xl:pl-20">

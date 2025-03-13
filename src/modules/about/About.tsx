@@ -1,15 +1,29 @@
+import useScreenSize from '@/shared/hooks/useMediaQuery';
+
 import Container from '@/shared/components/Container';
 import Section from '@/shared/components/Section';
 import SectionTitle from '@/shared/components/SectionTitle';
 import SendEmail from './components/SendEmail';
+import { SpriteSVG } from '@/assets/img/SpriteSVG';
 
 export default function About() {
+  const { isOnDesktop } = useScreenSize();
+
   return (
     <Section
-      styles={'pt-[48px] !pb-[132px] relative xl:pt-[116px] xl:!pb-[92px]'}
+      styles={'pt-[24px] !pb-[133px] relative z-0 xl:pt-[56px] xl:!pb-[92px]'}
       id="about"
     >
       <Container>
+        {(isOnDesktop && (
+          <div className="absolute left-0 -top-[59px]">
+            <SpriteSVG name="whiteLine" />
+          </div>
+        )) || (
+          <div className="absolute left-0 -top-[24px] -z-10">
+            <SpriteSVG name="witeLineMobile" />
+          </div>
+        )}
         <SectionTitle styles={'mb-5 !text-secondaryText xl:mb-10'}>
           О компании
         </SectionTitle>

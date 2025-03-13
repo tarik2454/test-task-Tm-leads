@@ -142,6 +142,38 @@ export const SpriteSVG = ({
         </svg>
       );
 
+    case 'whiteLine':
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="639"
+          height="60"
+          viewBox="0 0 639 60"
+          fill="none"
+        >
+          <path
+            d="M0 0H575.686C577.808 0 579.843 0.842855 581.343 2.34315L639 60H0V0Z"
+            fill="white"
+          />
+        </svg>
+      );
+
+    case 'witeLineMobile':
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="267"
+          height="82"
+          viewBox="0 0 267 82"
+          fill="none"
+        >
+          <path
+            d="M0 0H222.855C226.179 0 229.232 1.83153 230.796 4.7638L264.939 68.7638C268.137 74.7588 263.793 82 256.998 82H8.99999C4.02943 82 0 77.9706 0 73V0Z"
+            fill="white"
+          />
+        </svg>
+      );
+
     default:
       return 'SVG not found';
   }
