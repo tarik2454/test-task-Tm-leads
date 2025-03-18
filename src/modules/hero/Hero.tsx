@@ -2,10 +2,10 @@ import useScreenSize from '@/shared/hooks/useMediaQuery';
 
 import Container from '@/shared/components/Container';
 import Section from '@/shared/components/Section';
-import Exchange from './components/Exchange';
 import Input from '@/shared/components/Input';
 import Button from '@/shared/components/Button';
-import price from '@/assets/img/price.png';
+import price_m from '@/assets/img/price_m.png';
+import price_s from '@/assets/img/price_s.png';
 
 export default function Hero() {
   const { isOnDesktop } = useScreenSize();
@@ -17,7 +17,9 @@ export default function Hero() {
     >
       <Container>
         <div className="xl:flex xl:flex-row-reverse xl:justify-end xl:items-start xl:gap-[104px]">
-          {(isOnDesktop && <img src={price} alt="Price" />) || <Exchange />}
+          {(isOnDesktop && <img src={price_m} alt="Price" />) || (
+            <img className="mb-[33px]" src={price_s} alt="Price" />
+          )}
 
           <div className="xl:w-[50%]">
             <h1

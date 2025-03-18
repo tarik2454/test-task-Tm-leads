@@ -43,12 +43,11 @@
 }
 
 .swiper-slide {
-  /* margin-right: 0 !important; */
   flex-shrink: 1 !important;
 }
 
 .swiper-scrollbar {
-  background-color: rgba(67, 79, 112, 0.6) !important;
+  background-color: rgba(130, 142, 170, 0.6) !important;
   opacity: 0.4 !important;
   width: 91% !important;
   height: 6px !important;
@@ -60,7 +59,7 @@
 
 .swiper-scrollbar-drag {
   width: 62px !important;
-  background-color: #6073a2 !important;
+  background-color: #57e1ff !important;
 }
 
 .skewed {

@@ -34,11 +34,11 @@ export default function TariffsCard({
           : 'bg-secondaryBackground border-purple border'
       }`}
     >
-      <div className="xl:flex xl:flex-col xl:justify-between xl:h-full">
+      <div className="md:flex md:flex-col md:justify-between md:h-full">
         <div>
-          <h3 className="mb-6 text-xl font-medium tracking-minus4">{title}</h3>
+          <h3 className="mb-6 text-md font-medium tracking-minus4">{title}</h3>
 
-          <ul className="space-y-2 mb-6 text-sm opacity-80 xl:text-base">
+          <ul className="space-y-2 mb-6 text-sm opacity-80 md:text-base">
             {features.map((feature, index) => (
               <li
                 key={index}
@@ -74,7 +74,7 @@ export default function TariffsCard({
               </button>
 
               {isOpen && (
-                <ul className="absolute right-0 bottom-full mb-1 w-40 bg-primaryBackground bg-opacity-40 rounded-md z-10">
+                <ul className="absolute right-0 bottom-full mb-1 w-40 border-[0.1px] bg-black-100 bg-opacity-80 rounded-md z-10">
                   {durationOptions.map(option => (
                     <li
                       key={option.months}

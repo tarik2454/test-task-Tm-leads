@@ -3,7 +3,7 @@ import scrollToSection from '@/shared/utilitis/scrollToSection';
 import { menuItems } from '@/shared/data/menuItems';
 
 import Container from '@/shared/components/Container';
-import Logo from '../../assets/img/logo.png';
+import logo_m from '../../assets/img/logo_m.png';
 
 export default function Footer() {
   return (
@@ -39,8 +39,8 @@ export default function Footer() {
 
           <div className="flex flex-col xl:justify-between xl:h-full">
             <img
-              src={Logo}
-              alt="Логотип"
+              src={logo_m}
+              alt="Logo"
               className="w-[165px] h-auto mb-[81px]"
             />
             <p className="text-sm text-gray-400 flex xl:mb-0">

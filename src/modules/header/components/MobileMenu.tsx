@@ -20,9 +20,12 @@ export default function MobileMenu({
         }`
       )}
     >
-      <div className="h-full">
-        <Container>
-          <button className="absolute top-[9px] right-2" onClick={closeMenu}>
+      <Container>
+        <div className="h-full relative">
+          <button
+            className="absolute top-[-74px] right-[-6px] md:right-[-8px] z-10"
+            onClick={closeMenu}
+          >
             <SpriteSVG name={'closeButton'} />
           </button>
 
@@ -36,8 +39,8 @@ export default function MobileMenu({
               </Button>
             </div>
           </div>
-        </Container>
-      </div>
+        </div>
+      </Container>
     </div>
   );
 }

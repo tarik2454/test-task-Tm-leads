@@ -7,7 +7,7 @@ import { menuItems } from '@/shared/data/menuItems';
 
 import { SpriteSVG } from '@/assets/img/SpriteSVG';
 import Container from '@/shared/components/Container';
-import logo from '@/assets/img/logoHeader.png';
+import logo_s from '@/assets/img/logo_s.png';
 import MobileMenu from './components/MobileMenu';
 import Button from '@/shared/components/Button';
 
@@ -37,7 +37,7 @@ export default function Header() {
       <Container>
         <div className="flex items-center justify-between">
           <img
-            src={logo}
+            src={logo_s}
             alt="Logo"
             width={(isOnDesktop && 132) || 107}
             height={(isOnDesktop && 64) || 52}

@@ -27,7 +27,7 @@ export default function FrequentQuestions() {
               <div key={index} className="border rounded-md overflow-hidden">
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className={`w-full flex justify-between items-center -mb-[1px] p-4 pb-3 text-xl font-medium text-left tracking-minus4 xl:text-2xl ${
+                  className={`w-full flex justify-between items-center -mb-[1px] p-4 pb-3 text-xl font-medium text-left tracking-minus4 xl:text-2xl transition-colors duration-250 ease-in ${
                     activeIndex === index
                       ? ' bg-purpleBackground'
                       : 'text-black-100 bg-gray'
@@ -40,11 +40,17 @@ export default function FrequentQuestions() {
                     <SpriteSVG name={'chevronDown'} />
                   )}
                 </button>
-                {activeIndex === index && (
+                <div
+                  className={`overflow-hidden transition-all duration-250 ease-in ${
+                    activeIndex === index
+                      ? 'max-h-[500px] opacity-100'
+                      : 'max-h-0 opacity-10'
+                  }`}
+                >
                   <div className="p-4 pt-0 bg-purpleBackground text-white text-opacity-80">
                     {item.content}
                   </div>
-                )}
+                </div>
               </div>
             ))}
           </div>

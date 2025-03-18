@@ -16,8 +16,8 @@ export default function Tariffs() {
         <div className="xl:max-w-[846px] mx-auto">
           <SectionTitle styles={'mb-6'}>Тарифы</SectionTitle>
 
-          <div className="flex justify-end w-full mb-6 py-[14px] pr-[47px] bg-purpleBackground rounded-md relative xl:max-w-[413px] xl:mb-[44px]">
-            <Button styles="py-[10px] px-[61px] absolute top-1 left-1 tracking-minus4 xl:px-[80px]">
+          <div className="flex justify-end w-full mb-6 py-3 pr-[47px] bg-purpleBackground rounded-md relative max-w-[362px] xl:mb-[44px]">
+            <Button styles="py-[10px] px-[61px] absolute top-[2px] left-[2px] tracking-minus4 md:py-[8px] md:px-[70px] md:top-1 md:left-1">
               СПОТ
             </Button>
             <div className="text-lg font-medium leading-[1.1] tracking-minus4 uppercase text-cyan">
@@ -25,7 +25,7 @@ export default function Tariffs() {
             </div>
           </div>
 
-          <ul className="flex gap-5 flex-col xl:flex-row ">
+          <ul className="flex gap-5 flex-col md:flex-row ">
             {plans.map((plan, index) => (
               <TariffsCard key={index} {...plan} />
             ))}
