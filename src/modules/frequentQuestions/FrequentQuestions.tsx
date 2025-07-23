@@ -1,11 +1,11 @@
-import Container from '@/shared/components/Container';
-import Section from '@/shared/components/Section';
-import SectionTitle from '@/shared/components/SectionTitle';
+import Container from "@/shared/components/Container";
+import Section from "@/shared/components/Section";
+import SectionTitle from "@/shared/components/SectionTitle";
 
-import { useState } from 'react';
+import { useState } from "react";
 
-import faqData from './data/faqData';
-import { SpriteSVG } from '@/assets/img/SpriteSVG';
+import faqData from "./data/faqData";
+import { SpriteSVG } from "@/assets/img/SpriteSVG";
 
 export default function FrequentQuestions() {
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
@@ -18,7 +18,7 @@ export default function FrequentQuestions() {
     <Section styles="pt-[56px] mb-[54px]">
       <Container>
         <div className="xl:max-w-[846px] xl:mx-auto">
-          <SectionTitle styles={'mb-10 text-title !text-secondaryText'}>
+          <SectionTitle styles={"mb-10 text-title !text-secondaryText"}>
             Часто задаваемые вопросы
           </SectionTitle>
 
@@ -29,25 +29,27 @@ export default function FrequentQuestions() {
                   onClick={() => toggleAccordion(index)}
                   className={`w-full flex justify-between items-center -mb-[1px] p-4 pb-3 text-xl font-medium text-left tracking-minus4 xl:text-2xl transition-colors duration-250 ease-in ${
                     activeIndex === index
-                      ? ' bg-purpleBackground'
-                      : 'text-black-100 bg-gray'
+                      ? " bg-purpleBackground"
+                      : "text-black-100 bg-gray"
                   }`}
                 >
                   {item.title}
                   {activeIndex === index ? (
-                    <SpriteSVG name={'chevronUp'} />
+                    <SpriteSVG name={"chevronUp"} />
                   ) : (
-                    <SpriteSVG name={'chevronDown'} />
+                    <SpriteSVG name={"chevronDown"} />
                   )}
                 </button>
+
+                {/* Вставляем сюда */}
                 <div
-                  className={`overflow-hidden transition-all duration-250 ease-in ${
+                  className={`grid transition-all duration-250 ease-in ${
                     activeIndex === index
-                      ? 'max-h-[500px] opacity-100'
-                      : 'max-h-0 opacity-10'
+                      ? "grid-rows-[1fr] opacity-100"
+                      : "grid-rows-[0fr] opacity-0"
                   }`}
                 >
-                  <div className="p-4 pt-0 bg-purpleBackground text-white text-opacity-80">
+                  <div className="overflow-hidden p-4 pt-0 bg-purpleBackground text-white text-opacity-80">
                     {item.content}
                   </div>
                 </div>
